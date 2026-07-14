@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .dark body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .dark * {
+    color: black !important;
+    border-color: #e5e7eb !important;
+  }
+}

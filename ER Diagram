@@ -1,0 +1,39 @@
+                    +------------------+
+                    |     STUDENT      |
+                    +------------------+
+                    | Student_ID (PK)  |
+                    | Name             |
+                    | DOB              |
+                    | Gender           |
+                    | Address          |
+                    | Phone            |
+                    | Email            |
+                    +------------------+
+                             |
+                      Enrolls In
+                             |
+                             | M:N
+                             |
+                    +------------------+
+                    |    ENROLLMENT    |
+                    +------------------+
+                    | Enrollment_ID(PK)|
+                    | Student_ID (FK)  |
+                    | Course_ID (FK)   |
+                    | Semester         |
+                    | Grade            |
+                    +------------------+
+                       /            \
+                      /              \
+                     /                \
+                    /                  \
+         1:M       /                    \      M:1
+                  /                      \
++------------------+                +------------------+
+|      COURSE      |                |    DEPARTMENT    |
++------------------+                +------------------+
+| Course_ID (PK)   |                | Department_ID(PK)|
+| Course_Name      |                | Department_Name  |
+| Credits          |                | HOD              |
+| Department_ID(FK)|                +------------------+
++------------------+

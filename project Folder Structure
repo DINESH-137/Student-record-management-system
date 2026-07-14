@@ -1,0 +1,26 @@
+Student-Record-Management-System/
+│
+├── index.html              # Login Page
+├── dashboard.html          # Admin Dashboard
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── backend/
+│   ├── config.php
+│   ├── login.php
+│   ├── add_student.php
+│   ├── delete_student.php
+│   └── update_student.php
+│
+├── database/
+│   └── student_management.sql
+│
+└── README.md
